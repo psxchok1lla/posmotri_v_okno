@@ -1,8 +1,13 @@
-/* content styles start */
+/* page styles start */
 
 .page {
   padding: 8.3125rem 1.875rem;
 }
+
+/* page styles end */
+
+
+/* content styles start */
 
 .content {
   position: relative;
@@ -11,10 +16,38 @@
   gap:1.875rem;
 }
 
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  position: relative;
+  overflow: scroll;
+}
+
+.content__list-item:not(:last-child) {
+  margin-bottom: 1.875rem;
+}
+
+.content__details{
+  display: grid;
+  grid-template-rows: 13.125rem 18.625rem;
+  gap: 1.625rem;
+}
+
+.content__video-card {
+  display: grid;
+  grid-template-columns: 12.5rem 12.125rem;
+}
+
+.content__video-card-thumbnail {
+  width: 100%; 
+}
+
 /* content styles end */
 
 
-/* result styles end */
+/* result styles start */
 
 .result {
   display: flex;
@@ -22,7 +55,8 @@
   justify-content: end;
 }
 
-.result__video-container {
+.result__video-container {  
+  position: relative;
   margin-bottom: 1rem;
 }
 
@@ -30,6 +64,11 @@
   width: 100%;
   text-align: start;
 }
+
+/* result styles end */
+
+
+/* search-form styles start */
 
 .search-form {
   display: flex;
@@ -49,18 +88,6 @@
   width: 14.0625rem;
   border-bottom: 1px solid #fff;
 }
-
-.visually-hidden {
-	position: absolute; 
-	width: 1px; 
-	height: 1px;
-	margin: -1px; 
-	padding: 0; 
-	border: 0; 
-	clip: rect(0 0 0 0);
-	overflow: hidden; 
-}
-
 
 label .search-form__pseudo-checkbox {
   display: inline-block;
@@ -84,48 +111,8 @@ input[type='checkbox']:focus-visible + span {
   outline-offset: 1px;
 }
 
-.content__accent {
-  color: #545050;
-}
-
-.content__list {
-  overflow: scroll;
-}
-
-.content__list-item:not(:last-child) {
-  margin-bottom: 1.875rem;
-}
-
-.content__details{
-  display: grid;
-  grid-template-rows: 13.125rem 18.625rem;
-  gap: 1.625rem;
-}
-
-.content__video-card {
-  display: grid;
-  grid-template-columns: 12.5rem 12.125rem;
-}
-
-.content__video-card-thumbnail {
-  width: 100%; 
-}
-
-
-
 /* .more-button {
   background-color: transparent;
 } */
-
-/* result styles end */
-
-
-
-
-
-
-/* template styles start */
-
-
-
-/* template styles end */
+ 
+/* search-form styles end */
