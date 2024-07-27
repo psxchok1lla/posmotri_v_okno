@@ -16,6 +16,12 @@
   gap:1.875rem;
 }
 
+.content__details{
+  display: grid;
+  grid-template-rows: 13.125rem 18.625rem;
+  gap: 1.625rem;
+}
+
 .content__accent {
   color: #545050;
 }
@@ -29,12 +35,6 @@
   margin-bottom: 1.875rem;
 }
 
-.content__details{
-  display: grid;
-  grid-template-rows: 13.125rem 18.625rem;
-  gap: 1.625rem;
-}
-
 .content__video-card {
   display: grid;
   grid-template-columns: 12.5rem 12.125rem;
@@ -44,25 +44,45 @@
   width: 100%; 
 }
 
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__video-card-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  font-size: 1.125rem;
+  line-height: 1.0125rem;
+}
+
 /* content styles end */
 
 
 /* result styles start */
 
 .result {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+  display: grid;
+  grid-template-rows: 30rem 3.375rem;
+  align-self: end;
 }
 
 .result__video-container {  
+  display: inline-block;
   position: relative;
-  margin-bottom: 1rem;
+  align-self: end;
+}
+
+.result__video-container:hover {
+  cursor: pointer;
 }
 
 .result__video {
   width: 100%;
-  text-align: start;
 }
 
 /* result styles end */
@@ -75,21 +95,24 @@
   gap: 2.5rem;
 }
 
+/* .search-form__checkbox-list {
+
+} */
+
+.search-form__label {
+  vertical-align: middle;
+  /* padding-bottom: 2px; */
+}
+
 .search-form__fieldset {
   border: none;
-  font-size: 1.125rem;
 }
 
 .search-form > .search-form__fieldset, .button {
   flex: 1;
 }
 
-.search-form__fieldset-title::before {
-  width: 14.0625rem;
-  border-bottom: 1px solid #fff;
-}
-
-label .search-form__pseudo-checkbox {
+/* label .search-form__pseudo-checkbox {
   display: inline-block;
   width: 1.1875rem;
   height: 1.1875rem;
@@ -99,16 +122,20 @@ label .search-form__pseudo-checkbox {
 
 input[type='checkbox']:checked + span {
   height: 0.9375rem;
-  width: 0.9375rem;
-  outline: 1px solid #fff;
+  width: 0.9375rem; 
+  border: 1px solid transparent;
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
-input[type='checkbox']:focus-visible + span {
+/* input[type='checkbox']:focus-visible + span {
   outline: 1px solid #fff;
   outline-offset: 1px;
+} */
+
+.search-form__label:active {
+  outline: 1px solid red;
 }
 
 /* .more-button {
@@ -116,3 +143,6 @@ input[type='checkbox']:focus-visible + span {
 } */
  
 /* search-form styles end */
+
+
+/* content-details styles start */

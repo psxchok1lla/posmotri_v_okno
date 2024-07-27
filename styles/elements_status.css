@@ -1,0 +1,23 @@
+/* hover styles start */
+
+.search-form__label, 
+.search-from__fieldset {
+  display: inline-block;
+}
+
+.search-form__label, 
+.search-from__fieldset
+:hover {
+  cursor: pointer;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
+
+.content__video-card-description-container:hover {
+  text-decoration: underline;
+}
+
+
+/* hover styles end */

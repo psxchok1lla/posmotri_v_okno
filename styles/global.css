@@ -52,6 +52,10 @@ h2 {
   font-size: 1.125rem;
 }
 
+.fieldset {
+  border: none;
+}
+
 .visually-hidden {
 	position: absolute; 
 	width: 1px; 
