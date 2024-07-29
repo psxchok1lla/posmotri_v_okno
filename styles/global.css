@@ -56,6 +56,16 @@ h2 {
   border: none;
 }
 
+.button {
+  font-size: 1.125rem;
+  font-weight: bold;
+  font-family: 'Fira Sans Condensed';
+  color: #fff;
+  border: 1px solid #fff;
+  appearance: none;
+  background-color: transparent;
+}
+
 .visually-hidden {
 	position: absolute; 
 	width: 1px; 
