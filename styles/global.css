@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -7,6 +6,7 @@
 
 html {
   block-size: 100%;
+  font-size: 16px;
 }
 
 .page {
@@ -15,7 +15,6 @@ html {
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 1.125rem;
   background-color: #1b1919;
 }
 
@@ -41,13 +40,13 @@ ol {
 h1 {
   font-size: 4.6875rem;
   line-height: 4.40625rem;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 h2 {
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: lighter;
   font-size: 1.125rem;
 }
@@ -59,7 +58,7 @@ h2 {
 .button {
   font-size: 1.125rem;
   font-weight: bold;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   color: #fff;
   border: 1px solid #fff;
   appearance: none;
@@ -67,12 +66,12 @@ h2 {
 }
 
 .visually-hidden {
-	position: absolute; 
-	width: 1px; 
-	height: 1px;
-	margin: -1px; 
-	padding: 0; 
-	border: 0; 
-	clip: rect(0 0 0 0);
-	overflow: hidden; 
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

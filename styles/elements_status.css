@@ -1,8 +1,9 @@
 /* inline-block styles start */
 
-.search-form__label, 
+.search-form__label,
 .search-from__fieldset {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .search-form__submit-button {
@@ -18,24 +19,20 @@
   margin: 1px;
 }
 
-.more-button-template {
-  display: inline-block;
-}
-
 /* inline-block styles end */
 
 
 /* active styles start */
 
 .search-form__textfield:active {
-border: 1px solid #fff;
+  border: 1px solid #fff;
 }
 
 .button:active {
   background-color: #545050;
 }
 
-.content__card-link_current:active {
+.content__card-link:active {
   background-color: #545050;
 }
 
@@ -56,16 +53,11 @@ border: 1px solid #fff;
   text-decoration: underline;
 }
 
-.content__video-card-description-container:hover {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
-.search-form__submit-button:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.more-button:hover {
+.button:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -90,13 +82,13 @@ label:has(:focus-visible) {
 }
 
 .more-button:focus {
-  outline: 1px solid #fff; 
-  outline-offset: 1px; 
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
-.content__video-card:focus {
-  outline: 1px solid #fff; 
-  outline-offset: 1px; 
+.content__card-link:focus {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 /* focus styles end */

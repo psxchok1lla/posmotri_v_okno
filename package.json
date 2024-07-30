@@ -5,7 +5,7 @@
   "scripts": {
     "check": "prettier --check './**/*.{html,css,js}'",
     "format": "prettier --write './**/*.{html,css,js}'",
-    "lint":  "stylelint **/*.css",
+    "lint": "stylelint **/*.css",
     "lintfix": "stylelint **/*.css --fix",
     "checkAll": "npm run check && npm run lint",
     "fixAll": "npm run format && npm run lintfix"
@@ -14,7 +14,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "prettier": "^3.3.2",
-    "stylelint": "^16.6.1"
+    "prettier": "^3.3.3",
+    "stylelint": "^16.8.0"
   }
 }
